@@ -40,7 +40,8 @@ tab1, tab2 = st.tabs(["FactCheck", "Help"])
 with tab1:
     st.markdown("""
     Please paste your message in the below text box """)
-    uploaded_text = st.text_area('(max 3000 chars)', height=250)
+    uploaded_text = st.text_area('(max 3000 chars)', height=250, max_chars=3000)
+    
     
     run = st.button("Check Message")
 
