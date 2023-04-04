@@ -36,6 +36,20 @@ st.markdown(
 
 
 st.title("ChatFact: Verify the Reliability of Your Messages with AI")
+
+# Add link to your GitHub repository
+#st.write("[![GitHub](https://img.shields.io/badge/GitHub-Repo-green?style=flat-square&logo=github)](https://github.com/amaan-ai/ChatFact-Verify-the-Reliability-of-Your-Messages-with-AI)")
+
+github_link = """
+<div style='float: right;'>
+    <a href='https://github.com/amaan-ai/ChatFact-Verify-the-Reliability-of-Your-Messages-with-AI'>
+        <img src='https://img.shields.io/badge/GitHub-Repo-green?style=flat-square&logo=github'>
+    </a>
+</div>
+"""
+st.markdown(github_link, unsafe_allow_html=True)
+
+
 tab1, tab2 = st.tabs(["FactCheck", "Help"])
 with tab1:
     st.markdown("""
