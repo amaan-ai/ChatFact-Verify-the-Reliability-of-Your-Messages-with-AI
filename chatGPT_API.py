@@ -25,7 +25,7 @@ class checkMessage:
     def callChatGPT(self, input_text):
         
         input_prompt = "I have receive the message following message: " + '"' + str(input_text)  + '"'  + "."
-        input_prompt = input_prompt + " Can you check if the message is factually correct? Please give numerical point wise answer for long messages and do not repeat the original message in your response. Keep your response on points concise. Make sure you're giving fact check results and nothing else"
+        input_prompt = input_prompt + " \n Can you check if the message is factually correct? \n Please give numerical point wise answer for long messages and do not repeat the original message in your response. \n Keep your response on points concise. \n Make sure you're giving fact check results and nothing else"
         input_prompt = str(input_prompt)
         print("Input prompt is: ", input_prompt)
 
